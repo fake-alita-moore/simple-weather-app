@@ -1,0 +1,167 @@
+/* Rectangle 1 */
+.Card-Rectangle {
+  position: absolute;
+  width: 500px;
+  height: 250px;
+
+  background: linear-gradient(90deg, rgba(92, 190, 255, 0.9) 61.2%, rgba(255, 255, 255, 0) 61.28%), #0075C4;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 0px 56px 0px 0px;
+}
+
+/* Chicago */
+.Card-City{
+  overflow: hidden;
+  position: absolute;
+  width: 200px;
+  height: 33px;
+  top: 10px;
+  left: 25px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 27px;
+  line-height: 32px;
+
+  color: #FFFFFF;
+}
+
+/* Thu Apr 22 2021 */
+.Card-Date{
+  overflow: hidden;
+  position: absolute;
+  width: 200px;
+  height: 19px;
+  top: 40px;
+  left: 25px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+
+  color: #FFFFFF;
+}
+
+/* Vector 1 */
+.Card-Divider-Top{
+  position: absolute;
+  width: 200px;
+  height: 0px;
+  top: 75px;
+  left: 25px;
+  
+  border: 1px solid #FFFDFD;
+}
+
+/* 1.2 C */
+.Card-Temp{
+  overflow: hidden;
+  position: absolute;
+  width: 200px;
+  height: 54px;
+  top: 85px;
+  left: 25px;
+  
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 56px;
+  
+  color: #FFFFFF;
+}
+
+/* 2.2 / 0 c */
+.Card-Low-High{
+  overflow: hidden;
+  position: absolute;
+  width: 200px;
+  height: 18px;
+  top: 145px;
+  left: 25px;
+  
+  font-family: Roboto;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 14px;
+  
+  color: #FFFFFF;
+}
+
+
+/* few clouds */
+.Card-Description{
+  overflow: hidden;
+  position: absolute;
+  width: 200px;
+  height: 16px;
+  top: 165px;
+  left: 25px;
+  
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  
+  color: #FFFFFF;  
+}
+
+.Card-Divider-Bottom{
+  position: absolute;
+  width: 200px;
+  height: 0px;
+  top: 190px;
+  left: 25px;
+  
+  border: 1px solid #FFFDFD;
+}
+
+/* Wind: */
+.Card-Wind-Text{
+  overflow: hidden;
+  position: absolute;
+  width: 200px;
+  height: 14px;
+  top: 200px;
+  left: 25px;
+  
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 14px;
+  /* identical to box height */
+  
+  color: #FFFFFF;
+}
+
+.Card-Humidity-Text{
+  overflow: hidden;
+  position: absolute;
+  width: 200px;
+  height: 14px;
+  top: 215px;
+  left: 25px;
+  
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 14px;
+  /* identical to box height */
+  
+  color: #FFFFFF;
+}
+
+.Card-Icon{
+  overflow: hidden;
+  position: absolute;
+  display:"flex";
+  margin-left: 300px;
+  margin-top: 25px;
+}
