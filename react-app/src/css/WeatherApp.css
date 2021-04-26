@@ -21,3 +21,32 @@
   font-weight: 700px;
   font-size: 20px;
 }
+
+.WeatherApp-Loading-Container {
+  position: relative;
+  left: 250px;
+  top: 100px;
+}
+
+.WeatherApp-Loading-Button {
+  position: absolute;
+  width: 200px;
+  height: 71px;
+
+  background: linear-gradient(304.98deg, #0075C4 27.02%, rgba(92, 190, 255, 0.2) 177.21%);
+  border-radius: 35.5px;
+}
+
+.WeatherApp-Loading-Text {
+  width: 175px;
+  height: 32px;
+  left: inherit;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 14px;
+
+  color: #FFFFFF;
+}

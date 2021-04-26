@@ -9,7 +9,7 @@ import { WeatherCard } from "src/components/WeatherCard";
 export const _getWeather = (_API) => async (lat, lon) => {
   const weather = await _API.getCurrentWeather(lat, lon);
 
-  if (!weather) return;
+  if (!weather || !weather?.weather.length) return;
 
   return {
     icon: weather.weather[0].icon,
@@ -49,7 +49,10 @@ export default function WeatherApp() {
 
   const updateWeather = async (lat, lng) => {
     const weather = await getWeather(lat, lng);
-    if (!weather) return;
+    if (!weather) {
+      setWeather(undefined);
+      return;
+    };
 
     const { icon, data } = weather;
     setWeather(data);
@@ -60,9 +63,19 @@ export default function WeatherApp() {
     updateWeather(latLng.lat, latLng.lng);
   }, [latLng]);
 
-  if (!weather?.data || !weather?.cityName) return null;
+  if (!weather || !weather?.data || !weather?.cityName) return (
+    <div className="WeatherApp-Loading-Container">
+      <button onClick={() => updateWeather(latLng.lat, latLng.lng)} className="WeatherApp-Loading-Button">
+        <text className="WeatherApp-Loading-Text">
+          Failed to connect to server click to try again
+        </text>
+        
+      </button>
+    </div>
+    
+  )
 
-  return weather ? (
+  return (
     <div  className="WeatherApp-Container">
       <div className="WeatherApp-Header-Container">
         <span className="WeatherApp-Title">What's the Weather? 🌤</span>
@@ -77,5 +90,5 @@ export default function WeatherApp() {
         />
       </div>
     </div>
-  ) : null;
+  )
 }
