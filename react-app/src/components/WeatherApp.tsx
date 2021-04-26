@@ -66,10 +66,9 @@ export default function WeatherApp() {
   if (!weather || !weather?.data || !weather?.cityName) return (
     <div className="WeatherApp-Loading-Container">
       <button onClick={() => updateWeather(latLng.lat, latLng.lng)} className="WeatherApp-Loading-Button">
-        <text className="WeatherApp-Loading-Text">
+        <span className="WeatherApp-Loading-Text">
           Failed to connect to server click to try again
-        </text>
-        
+        </span>
       </button>
     </div>
     
